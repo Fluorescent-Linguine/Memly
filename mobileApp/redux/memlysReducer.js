@@ -25,7 +25,6 @@ export function addToMemlyIdStorage(memlyId) {
 // ---- INITIAL STATE FOR MEMLYS REDUCER ----- //
 
 const memlysInitialState = {
-<<<<<<< 67ecbe3f9ce46675c7c4a72e99cbf06058be14e5
   memlys: [
     {
       location: {
@@ -146,122 +145,6 @@ const memlysInitialState = {
       }
     }
   ],
-=======
-  memlys: [{
-    location: {
-      latitude: 37.7836966,
-      longitude: -122.4089664
-    },
-    user: {
-      name: 'Mike Wong',
-      avatarUrl: 'http://www.menshairstyles.net/d/76238-2/Young+Asian+man+hairstyles.PNG'
-    },
-    place: 'Hack Reactor',
-    comment: 'Hey guys!',
-    key: 'Hack Reactor',
-    defaultAnimation: 2,
-    showInfo: false,
-    media: {
-      url: "../../images/test-assets/hackreactor.jpg",
-      timestamp: new Date()
-    }
-  }, {
-    location: {
-      latitude: 51.507351,
-      longitude: -0.155758
-    },
-    user: {
-      name: 'Mike Wong',
-      avatarUrl: 'http://www.menshairstyles.net/d/76238-2/Young+Asian+man+hairstyles.PNG'
-    },
-    place: 'Hack Reactor',
-    comment: 'Hey guys!',
-    // username: "Michael Wong",
-    // userAvatar: "../../images/test-assets/userAvatar.jpg",
-    key: 'timestamp1',
-    defaultAnimation: 2,
-    showInfo: false,
-    media: {
-      url: "../../images/test-assets/shutterstock_276995975.jpg",
-      timestamp: new Date()
-    }
-  }, {
-    location: {
-      latitude: 53.507351,
-      longitude: -0.125758
-    },
-    user: {
-      name: 'Mike Wong',
-      avatarUrl: 'http://www.menshairstyles.net/d/76238-2/Young+Asian+man+hairstyles.PNG'
-    },
-    place: 'Hack Reactor',
-    comment: 'Hey guys!',
-    // username: "Michael Wong",
-    // userAvatar: "../../images/test-assets/userAvatar.jpg",
-    key: 'timestamp1',
-    defaultAnimation: 2,
-    showInfo: false,
-    media: {
-      url: "../../images/test-assets/shutterstock_276995975.jpg",
-      timestamp: new Date()
-    }
-  }, {
-    location: {
-      latitude: 51.507351,
-      longitude: -0.12958
-    },
-    user: {
-      name: 'Mike Wong',
-      avatarUrl: 'http://www.menshairstyles.net/d/76238-2/Young+Asian+man+hairstyles.PNG'
-    },
-    place: 'Hack Reactor',
-    comment: 'Hey guys!',
-    key: 'timestamp2',
-    defaultAnimation: 2,
-    showInfo: false,
-    media: {
-      url: "../../images/test-assets/M9071-PARENT-2.jpg",
-      timestamp: new Date()
-    }
-  }, {
-    location: {
-      latitude: 51.509351,
-      longitude: -0.15958
-    },
-    user: {
-      name: 'Mike Wong',
-      avatarUrl: 'http://www.menshairstyles.net/d/76238-2/Young+Asian+man+hairstyles.PNG'
-    },
-    place: 'Hack Reactor',
-    comment: 'Hey guys!',
-    key: 'timestamp3',
-    defaultAnimation: 2,
-    showInfo: false,
-    media: {
-      url: "../../images/test-assets/15759420184_f34af1b4a8.jpg",
-      timestamp: new Date()
-    }
-  }, {
-    location: {
-      latitude: 51.506351,
-      longitude: -0.12958
-    },
-    user: {
-      name: 'Mike Wong',
-      avatarUrl: 'http://www.menshairstyles.net/d/76238-2/Young+Asian+man+hairstyles.PNG'
-    },
-    place: 'Hack Reactor',
-    comment: 'Hey guys!',
-    key: 'timestamp4',
-    defaultAnimation: 2,
-    showInfo: false,
-    media: {
-      url: "../../images/test-assets/londonstreet.jpeg",
-      timestamp: new Date()
-    }
-  }],
->>>>>>> mobile changes
-
   memlyIdStorage: {
     1: true,
     2: true,
@@ -270,11 +153,8 @@ const memlysInitialState = {
     5: true,
     6: true,
   }
-<<<<<<< 67ecbe3f9ce46675c7c4a72e99cbf06058be14e5
 };
-=======
-}
->>>>>>> mobile changes
+
 
 //ideal memlys structure...
 
@@ -289,19 +169,6 @@ const memlysInitialState = {
 
 export default function memlysReducer(state = memlysInitialState, action) {
   switch (action.type) {
-<<<<<<< 67ecbe3f9ce46675c7c4a72e99cbf06058be14e5
-    
-  case 'ADD_MEMLY' : {
-    return {
-      ...state,
-      memlyIdStorage: {
-        ...state.memlyIdStorage,
-        [action.memly['_id']]: true, // DO SOMETHING WITH THISSSS
-      },
-      memlys: [action.memly, ...state.memlys, ]
-    };
-  }
-=======
 
     case 'ADD_MEMLY':
       {
@@ -314,8 +181,6 @@ export default function memlysReducer(state = memlysInitialState, action) {
           memlys: [action.memly, ...state.memlys, ]
         }
       }
->>>>>>> mobile changes
-
       // case 'ADD_MEMLY' : {
       //   return {
       //     ...state,
@@ -323,11 +188,8 @@ export default function memlysReducer(state = memlysInitialState, action) {
       //   }
       // }
 
-<<<<<<< 67ecbe3f9ce46675c7c4a72e99cbf06058be14e5
+
   default : return state;
-=======
-    default:
-      return state
->>>>>>> mobile changes
+
   }
 }

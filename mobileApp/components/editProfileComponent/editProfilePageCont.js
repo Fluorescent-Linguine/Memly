@@ -4,12 +4,11 @@ import { connect } from 'react-redux';
 import SideMenu from 'react-native-side-menu';
 import Icon from 'react-native-vector-icons/Ionicons';
 
-
 import MapComponent from '../MapComponent/MapComponent.js';
 import MyStatusBar from '../common/myStatusBar.js';
 import TopNavigationBar from '../common/topNavBar.js';
 import DrawerMenu from '../common/drawerMenu.js';
-import Profile from './profile.js';
+import EditProfile from './editProfile.js';
 
 import userReducer from '../../redux/userReducer.js';
 import * as userActions from '../../redux/userReducer.js';
@@ -78,7 +77,7 @@ class ProfilePageContainer extends Component {
           <View style ={ styles.container2}>
             <TopNavigationBar showSideMenu={this.showSideMenu.bind(this)} />
             <View style={ styles.container1 }>
-              <Profile user = {this.props.user} userFacebook = {this.props.userFacebook} memlyCount={this.props.memlyCount} />
+              <EditProfile user = {this.props.user} userFacebook = {this.props.userFacebook} memlyCount={this.props.memlyCount} />
             </View>
           </View>
       </SideMenu>
