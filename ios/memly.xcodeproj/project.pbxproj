@@ -357,7 +357,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-<<<<<<< 67ecbe3f9ce46675c7c4a72e99cbf06058be14e5
 		2CA31F701D8B50FF0041D642 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -374,8 +373,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-=======
->>>>>>> mobile changes
 		4606D6AA8D0646ADA216838D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -459,8 +456,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-<<<<<<< 67ecbe3f9ce46675c7c4a72e99cbf06058be14e5
-=======
 		B0B188981D8B59C30054D7BF /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -477,7 +472,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
->>>>>>> mobile changes
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -553,11 +547,7 @@
 					ProjectRef = 00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */;
 				},
 				{
-<<<<<<< 67ecbe3f9ce46675c7c4a72e99cbf06058be14e5
-					ProductGroup = 2CA31F721D8B50FF0041D642 /* Products */;
-=======
 					ProductGroup = B0B188981D8B59C30054D7BF /* Products */;
->>>>>>> mobile changes
 					ProjectRef = 4A21FEB369054DCDB97FDF3D /* RCTFBLogin.xcodeproj */;
 				},
 				{
@@ -601,11 +591,7 @@
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 				},
 				{
-<<<<<<< 67ecbe3f9ce46675c7c4a72e99cbf06058be14e5
-					ProductGroup = 2CA31F701D8B50FF0041D642 /* Products */;
-=======
 					ProductGroup = B0B1889A1D8B59C30054D7BF /* Products */;
->>>>>>> mobile changes
 					ProjectRef = F4AB10A4700C495EAE267481 /* RNVectorIcons.xcodeproj */;
 				},
 			);

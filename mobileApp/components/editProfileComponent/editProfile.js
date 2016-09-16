@@ -4,16 +4,16 @@ import React, { Component } from 'react';
 import Button from 'react-native-button';
 import {StyleSheet, Text, View, Image, TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
-import {Actions} from 'react-native-router-flux';
+
 
 var Profile = (props) => (
   <View>
     <Image source={props.picture} style={styles.image} />
 
-    <Button onPress={() => Actions.EditProfilePage()}
+    <Button
       containerStyle={styles.buttonContainer}
       style={styles.button}>
-      Edit Profile
+      Save Profile
     </Button>
   </View>
 );

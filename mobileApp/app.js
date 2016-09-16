@@ -11,12 +11,14 @@ import LoginPage from './components/loginComponent/loginPage.js';
 import MainPage from './components/mainComponent/mainPageCont.js';
 import ProfilePage from './components/profileComponent/profilePageCont.js';
 import MyMemliesPage from './components/myMemliesComponent/myMemliesPageCont.js';
+import EditProfilePage from './components/editProfileComponent/editProfilePageCont.js';
 
 // *** Import Reducers *** //
 import routesReducer from './redux/routesReducer.js';
 import memlysReducer from './redux/memlysReducer.js';
 import mapReducer from './redux/mapReducer.js';
 import loginReducer from './redux/loginReducer.js';
+import userReducer from './redux/userReducer.js';
 
 
 const reducers = combineReducers({
@@ -45,7 +47,7 @@ export default class memly extends Component {
             <Scene key='MainPage' component={MainPage} title='MainPage' />
             <Scene key='ProfilePage' component={ProfilePage} title='ProfilePage' />
             <Scene key='MyMemliesPage' component={MyMemliesPage} title='MyMemliesPage' />
-
+            <Scene key='EditProfilePage' component={EditProfilePage} title='EditProfilePage' />
           </Scene>
         </RouterWithRedux>
       </Provider>
