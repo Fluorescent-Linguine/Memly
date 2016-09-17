@@ -18,6 +18,10 @@ class MainPageContainer extends Component {
 
   showSideMenu () {
     this.setState({ isOpen: true });
+    var context = this;
+    setTimeout(function() {
+      context.setState({isOpen: false});
+    }, 3000);
   }
 
   hideSideMenu () {
@@ -30,7 +34,7 @@ class MainPageContainer extends Component {
       <SideMenu menu={menu} menuPosition={'right'} isOpen={ this.state.isOpen } >
           <MyStatusBar backgroundColor="#0288D1"/>
           <View style ={ styles.container2}>
-            <TopNavigationBar showSideMenu={this.showSideMenu.bind(this)} />
+            <TopNavigationBar hideSideMenu={this.hideSideMenu.bind(this)} showSideMenu={this.showSideMenu.bind(this)} />
             <View style={ styles.container1 }>
               <MapComponent />
             </View>
